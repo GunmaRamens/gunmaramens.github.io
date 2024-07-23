@@ -1,14 +1,14 @@
-import { useMemo } from "react";
+import { memo } from "react";
 
-const Header = useMemo(() => {
+const Header = memo(() => {
     return (
-        <header>
-            <h1>Gunma Ramens</h1>
+        <header className="mx-auto block">
+            <img src="/logo.png" alt="logo" className="w-1/2 mx-auto" />
             <p>
                 群馬大学でウェブやら組み込みやらLinuxやらで遊んでいる数人のグループ
             </p>
         </header>
     );
-}, []);
+});
 
 export default Header;
